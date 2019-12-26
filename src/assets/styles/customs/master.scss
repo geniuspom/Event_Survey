@@ -1,0 +1,181 @@
+html, body, #root, #body-container, .content, .inside-content, .main-content{
+  height: 100%;
+}
+
+#dataTable_wrapper{
+  overflow: auto;
+}
+
+.width-180{
+  min-width: 180px;
+  width: 180px;
+}
+
+.masonry-item{
+  .bd-radis{
+    border-radius: 0.5rem;
+  }
+}
+
+.DayPickerInput input{
+  display: block;
+width: 100%;
+height: calc(2.0625rem + 2px);
+padding: 0.375rem 0.75rem;
+font-size: 0.875rem;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.DayPickerInput-OverlayWrapper{
+  position: fixed;
+  z-index: 99999;
+}
+
+.line-height-inherit{
+line-height: inherit;
+}
+
+.rotate-icon > i{
+  //-webkit-transition: -webkit-transform .2s ease-in-out;
+  //transition: transform .2s ease-in-out;
+  display: inline-block;
+  transition: transform .5s;
+}
+
+.rotate-icon:hover > i{
+  //-webkit-transform: rotate(90deg);
+  //transform: rotate(90deg);
+  transform: translate(-3px, 0px);
+}
+
+
+.line {
+  position: absolute;
+  background-color: #adafb2;
+  height: 1px;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+.line-sperate {
+  background-color: #adafb2;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.text-with-line{
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  padding: 20px !important;
+}
+
+.postion_relative{
+  position: relative;
+}
+
+.text-1{
+  font-size: 1em;
+}
+
+.text-1_5{
+  font-size: 1.5em;
+}
+
+.text-2{
+  font-size: 2em;
+}
+
+.text-bold{
+  font-weight: 600;
+}
+
+.p-b-20{
+  padding-bottom: 20px;
+}
+
+.text-light-blue{
+  color: #00bcd4 !important;
+}
+
+.text-light-green{
+  color: #4caf50 !important;
+}
+
+.bg-light-blue{
+  background-color: #00bcd4 !important;
+}
+
+.bg-light-green{
+  background-color: #4caf50 !important;
+}
+
+.bg-white{
+  background-color: #fff !important;
+}
+
+.bg-black{
+  background-color: #000 !important;
+}
+
+.bg-red{
+  background-color: #f00 !important;
+}
+
+
+.margin-t-auto{
+  margin: auto 0;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+::placeholder{
+  color: #ccc !important;
+}
+
+
+//.dataTable{
+  //thead, tfoot{
+
+    //tr{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#12e287+0,5ce0ba+100 */
+      //background: rgb(18,226,135); /* Old browsers */
+      //background: -moz-linear-gradient(left, rgba(18,226,135,1) 0%, rgba(92,224,186,1) 100%); /* FF3.6-15 */
+      //background: -webkit-linear-gradient(left, rgba(18,226,135,1) 0%,rgba(92,224,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      //background: linear-gradient(to right, rgba(18,226,135,1) 0%,rgba(92,224,186,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12e287', endColorstr='#5ce0ba',GradientType=1 ); /* IE6-9 */
+
+      //color:#fff;
+      //text-align: center;
+
+      //th{
+        //vertical-align: middle;
+      //}
+
+    //}
+  //}
+//}
+
+.InputFromTo{
+  float: right;
+  margin-bottom: 10px;
+
+  .btn{
+    margin-left: 10px;
+  }
+}
+
+#dataTable_wrapper{
+  clear: both;
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Title",
+  "first_name": "First name",
+  "last_name": "Last name",
+  "mobile": "Mobile",
+  "email": "Email",
+  "email_confirmation": "Email Confirmation",
+  "submit": "Submit",
+  "nick_name": "Nickname",
+  "Birth_year": "Birth year (A.D.)",
+  "gender": {
+    "0": "Gender",
+    "1": "Male",
+    "2": "Female"
+    },
+  "marital_status": {
+    "0": "What's your marital status",
+    "1": "Single",
+    "2": "Married"
+    },
+  "province": "Which province do you currently reside in?",
+  "affiliation": {
+    "0": "What is your affiliation?",
+    "1": "High School Student",
+    "2": "University Student",
+    "3": "Faculty",
+    "4": "Government official / State enterprise",
+    "5": "Employee",
+    "6": "Business Owner",
+    "7": "Freelance"
+    },
+  "company": "Name of your company / institution / organization",
+  "position": "Your position",
+  "what_learn_about": "What would you like to learn about?",
+  "where_about_ynu":
+    {
+      "0": "Where did you learn about YourNextU",
+      "1": "Email",
+      "2": "Website",
+      "3": "Social media",
+      "4": "News",
+      "5": "Friends",
+      "6": "Colleagues",
+      "7": "Other, please specifiy free text"
+    }
+}

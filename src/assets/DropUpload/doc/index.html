@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Drop Uploader Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/highlightjs/styles/monokai-sublime.css">
+	<script src="assets/highlightjs/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Drop Uploader&rdquo; Documentation by Horoshilow Boris v2.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Drop Uploader&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 07/06/2016<br>
+					By: Horishilow Boris<br>
+					Email: <a href="mailto:borisolhor@gmail.com">support@borisolhor.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/borisolhor">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#including">Including plugin files</a></li>
+			<li><a href="#start">Quick start guide</a></li>
+			<li><a href="#js">JS Plugin Options</a></li>
+			<li><a href="#input">File Input Options</a></li>
+			<li><a href="#uploading">File Uploading</a></li>
+			<li><a href="#events">JS Events</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="including"><strong>A) Including plugin files</strong> - <a href="#toc">top</a></h3>
+		<p>To use this plugin you must include following files:</p>
+
+		<pre><code class="html">
+&lt;link rel="stylesheet" href="pe-icon-7-stroke/css/pe-icon-7-stroke.css"&gt;
+&lt;link rel="stylesheet" href="css/drop_uploader.css"&gt;
+
+&lt;script src="js/jquery-3.2.1.js"&gt;&lt;/script&gt;
+&lt;script src="js/drop_uploader.js"&gt;&lt;/script&gt;
+		</code></pre>
+
+	    <p><b>Note:</b> You must include jQuery plugin before drop_uploader.js file.</p>
+
+	    <p>You can use another icons (instead pe-7). In this case you need to set other icon params in <a href="#js">plugin options</a>.</p>
+
+	    <p>Also you need to include following script to activate drop uploader</p>
+
+	    <pre><code class="js">
+$(document).ready(function(){
+    $('input[type=file]').drop_uploader({
+        uploader_text: 'Drop files to upload, or',
+        browse_text: 'Browse',
+        only_one_error_text: 'Only one file allowed',
+        not_allowed_error_text: 'File type is not allowed',
+        big_file_before_error_text: 'Files, bigger than',
+        big_file_after_error_text: 'is not allowed',
+        allowed_before_error_text: 'Only',
+        allowed_after_error_text: 'files allowed',
+        browse_css_class: 'button button-primary',
+        browse_css_selector: 'file_browse',
+        uploader_icon: '&lt;i class="pe-7s-cloud-upload"&gt;&lt;/i&gt;',
+        file_icon: '&lt;i class="pe-7s-file"&gt;&lt;/i&gt;',
+        progress_color: '#4a90e2',
+        time_show_errors: 5,
+        layout: 'thumbnails',
+        method: 'normal',
+        chunk_size: 1000000, 
+        url: 'ajax_upload.php',
+        delete_url: 'ajax_delete.php',
+    });
+});
+	    </code></pre>
+
+	    <p>You need apply drop_uploader method to your input field with type file.</p>
+    
+	    <hr>
+		
+		<h3 id="start"><strong>B) Quick start guide</strong> - <a href="#toc">top</a></h3>
+		<p>To start use this plugin just include script files (javascript and CSS from drop uploader and also jQuery plugin and icons) and copy example code, which you can find in index.html file. After that you can change form fields, file uploading options and so on.</p>
+
+		<hr>
+
+		<h3 id="js"><strong>C) JS Plugin Options</strong> - <a href="#toc">top</a></h3>
+
+		<p>Drop Uploader have some options, that you can find here:</p>
+		
+	    <pre><code class="js">
+$(document).ready(function(){
+    $('input[type=file]').drop_uploader({
+        uploader_text: 'Drop files to upload, or',
+        browse_text: 'Browse',
+        only_one_error_text: 'Only one file allowed',
+        not_allowed_error_text: 'File type is not allowed',
+        big_file_before_error_text: 'Files, bigger than',
+        big_file_after_error_text: 'is not allowed',
+        allowed_before_error_text: 'Only',
+        allowed_after_error_text: 'files allowed',
+        browse_css_class: 'button button-primary',
+        browse_css_selector: 'file_browse',
+        uploader_icon: '&lt;i class="pe-7s-cloud-upload"&gt;&lt;/i&gt;',
+        file_icon: '&lt;i class="pe-7s-file"&gt;&lt;/i&gt;',
+        progress_color: '#4a90e2',
+        time_show_errors: 5,
+        layout: 'thumbnails',
+        method: 'normal',
+        chunk_size: 1000000, 
+        url: 'ajax_upload.php',
+        delete_url: 'ajax_delete.php',
+    });
+});
+	    </code></pre>
+		
+		<p><code>uploader_text - </code>File uploader description text</p> 
+
+		<p><code>browse_text - </code>Browse file text</p> 
+
+		<p><code>only_one_error_text - </code>Only one file allowed error text</p> 
+
+		<p><code>not_allowed_error_text - </code>File type is not allowed error text</p> 
+
+		<p><code>big_file_before_error_text - </code>Files, bigger than is not allowed error text (before file size)</p> 
+
+		<p><code>big_file_after_error_text - </code>Files, bigger than is not allowed error text (after file size)</p> 
+
+		<p><code>allowed_before_error_text - </code>Only FILETYPE files allowed error text (before file type)</p> 
+
+		<p><code>allowed_after_error_text - </code>Only FILETYPE files allowed error text (after file type)</p> 
+
+		<p><code>browse_css_class - </code>Browse file link classes</p> 
+
+		<p><code>uploader_icon - </code>Icon before description text</p> 
+
+		<p><code>file_icon - </code>File icon in file upload list</p> 
+
+		<p><code>progress_color - </code>Progress Bar color</p> 
+
+		<p><code>time_show_errors - </code>Time in seconds, before error text is disappear. Set to 0 to disable error disappearing.</p> 
+		
+		<p><code>layout - </code>Method, how to display selcted files in drop Uploader. Can be List or Thumbnails (by default).</p> 
+
+		<p><code>method - </code>Method, how to upload files to the server. Can be ajax, chunked or normal (by default).</p> 
+
+		<p><code>chunk_size - </code>Chunk size in bytes. Must be less than max_upload_size option.</p> 
+
+		<p><code>url - </code>URL for AJAX and Chunked file uploading request.</p> 
+
+		<p><code>delete_url - </code>URL for AJAX and Chunked file deleting request.</p> 
+
+		<hr>
+		
+		<h3 id="input"><strong>D) File Input Options</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Drop Uploader supports default file input attributes, such as <a href="http://www.w3schools.com/tags/att_input_multiple.asp" target="_blank">multiple</a> and <a href="http://www.w3schools.com/tags/att_input_accept.asp" target="_blank">accept</a>. You can use these attributes to in control file uploading via Drop Uploader.</p>
+
+		<pre><code class="html">
+&lt;form method="POST" action="upload.php" enctype="multipart/form-data"&gt;
+    &lt;input type="file" multiple name="file[]" accept="image/*"&gt;
+    &lt;input class="button-primary" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+        </code></pre>
+
+		<p>Also you can add file size limit by adding attribute <code>data-maxfilesize</code> (maximum file size in bytes).</p>
+
+		<pre><code class="html">
+&lt;h4&gt;Only Files Less than 1 Mb&lt;/h4&gt;
+&lt;form method="POST" action="upload.php" enctype="multipart/form-data"&gt;
+    &lt;input type="file" multiple name="file[]" data-maxfilesize="1000000"&gt;
+    &lt;input class="button-primary" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+		</code></pre>
+
+		<p><b>Note:</b> PHP server also have max file size restriction. See more info <a href="http://stackoverflow.com/questions/2184513/php-change-the-maximum-upload-file-size" target="_blank">here</a>.</p>
+
+		<p>You can set file list layout by adding attribute <code>data-layout</code> (it can be thumbnails or list). This field will overwrite global Drop Uploader settings</p>
+
+		<pre><code class="html">
+&lt;h4&gt;File List Layout&lt;/h4&gt;
+&lt;form method="POST" action="upload.php" enctype="multipart/form-data"&gt;
+    &lt;input type="file" name="file[]" multiple data-layout="list"&gt;
+    &lt;input class="button-primary" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+		</code></pre>
+
+		<p>You can set file upload method by adding attribute <code>data-method</code> (it can be normal, ajax or chunked). This field will overwrite global Drop Uploader settings. Also if you use AJAX or Chunked method, you also can set <code>data-url</code> and <code>data-deleteurl</code> attributes here.</p>
+
+		<pre><code class="html">
+&lt;h4&gt;AJAX Upload Form&lt;/h4&gt;
+&lt;form method="POST" action="upload.php" enctype="multipart/form-data"gt;
+    &lt;input type="file" name="file[]" data-method="ajax" multiplegt;
+    &lt;input class="button-primary" type="submit" value="Submit"gt;
+&lt;/formgt;
+		</code></pre>
+
+		<p>You can set file uploading limit by adding attribute <code>data-count</code>.</p>
+
+		<pre><code class="html">
+&lt;h4&gt;Three File Upload Form&lt;/h4&gt;
+&lt;form method="POST" action="upload.php" enctype="multipart/form-data"&gt;
+    &lt;input type="file" name="file[]" multiple data-count="3"&gt;
+    &lt;input class="button-primary" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+		</code></pre>
+		
+		<hr>
+		
+		<h3 id="uploading"><strong>E) File Uploading</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To transfer files to server you need to set form <code>enctype="multipart/form-data"</code> attribute. Also you need to add function, that will recieve files on server side. You can see working PHP example in <code>upload.php</code> file. For AJAX and Chunked file uploading you can see working examples in <code>ajax_upload.php</code> file. <code>ajax_delete.php</code> file is used to delete files, that was uploaded via AJAX.</p>
+		
+		<hr>
+
+		<h3 id="uploading"><strong>F) JS Events</strong> - <a href="#toc">top</a></h3>
+
+		<p>There is two JS events, that you can listen: <code>file_upload_start</code> and <code>file_upload_end</code>. This events is only available in AJAX or Chunked mode. As additional parameter you can get uploaded file name.</p>
+
+		<pre><code class="js">
+$("#drop_uploader_8").on("file_upload_start", function(event, name){
+    alert("Start upload" + name);
+});
+		</code></pre>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

@@ -1,0 +1,30 @@
+.label-title{
+	display: inline-block;
+	margin-bottom: .5rem;
+	font-size: 1.5em;
+	color: #fd7337;
+}
+
+.text_value{
+	position: relative;
+	display: block;
+	font-size: 1em;
+}
+
+.img_thumb{
+	max-width: 100%;
+}
+
+.text_value_minimal{
+	display: block;
+	margin-bottom: .5rem;
+	font-size: 0.9em;
+}
+
+.align_right{
+	text-align: right;
+}
+
+.min-height-full{
+	height: 100%;
+}

@@ -1,0 +1,7 @@
+$break-large: 992px;
+
+@media screen and (min-width: $break-large){
+  .email-app .email-wrapper {
+      margin-left: 0px !important;
+  }
+}
