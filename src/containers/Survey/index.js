@@ -3,10 +3,13 @@ import {connect} from "react-redux";
 import $ from 'jquery';
 
 //CSS
+import '../../assets/styles/customs/radios.scss';
 
 import SurveyPage from '../../components/Survey';
 
 import { SubmitRegister } from '../../actions/register';
+
+import Radios from '../../components/Survey/radio';
 
 class Survey extends Component {
 
@@ -141,12 +144,8 @@ class Survey extends Component {
   render() {
 
     return (
-      <SurveyPage
-        data="test data"
-        handleChange={this.handleChange}
-        value={this.state.value}
-        handleSubmit={this.handleSubmit}
-      />
+
+    <Radios />
     )
   }
 }

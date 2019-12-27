@@ -1,0 +1,46 @@
+.box
+{
+  width: 300px;
+}
+p
+{
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+.rating
+{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  border: 1px solid #000;
+  border-right: 0px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #f00, #ff0, #0f0);
+}
+.rating input
+{
+  display: none;
+}
+.rating label
+{
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  border-right: 1px solid #000;
+  margin-bottom: 0 !important;
+}
+.rating input[type="radio"]:hover ~ label,
+.rating input[type="radio"]:checked ~ label
+{
+  background: transparent;
+}
