@@ -1,15 +1,30 @@
+:root{
+  $rating_choice: 6;
+}
+
+$rating_choice: 6;
+$label_rating_widht: 50px;
+$scale_width: $label_rating_widht * $rating_choice;
+
+body
+{
+  color: #fff;
+}
+
 .box
 {
-  width: 300px;
+  width: 100%;//300px;
 }
 p
 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 20px;
+  color: #fff;
 }
 .rating
 {
+  width: $scale_width;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -27,7 +42,7 @@ p
 {
   display: block;
   cursor: pointer;
-  width: 50px;
+  width: $label_rating_widht;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -39,8 +54,14 @@ p
   border-right: 1px solid #000;
   margin-bottom: 0 !important;
 }
-.rating input[type="radio"]:hover ~ label,
+/*.rating input[type="radio"]:hover ~  label,
 .rating input[type="radio"]:checked ~ label
+{
+  background: transparent;
+}*/
+
+.rating > div:hover ~ div > label,
+.rating > div:hover > label,
 {
   background: transparent;
 }

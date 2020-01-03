@@ -1,20 +1,45 @@
 import React, { Component, Suspense } from 'react';
 
 const Radios = ({
-  data, handleChange, value, handleSubmit
+  data, handleChange, value, handleSubmit, onselect, lang, index, firstquestion
 }) => {
+
+  let choices = [];
+
+  for (let i = 1; i <= data.score; i++)
+  {
+    choices.unshift(
+      {
+        "name" : data.name,
+        "id" : data.id + "_" + i,
+        "value" : i,
+        "classname" : "no-" + i}
+    );
+
+  }
+
+  let question_show;
+
+  if(lang == "TH"){
+    question_show = data.question_TH;
+  }else{
+    question_show = data.question_EN;
+  }
+
 
   return (
 
     <div className="box">
-      <p>How satisfied are you with our channel?</p>
+      <p>{firstquestion + ") " + question_show + " [" + data.id + "]"}</p>
       <div className="rating">
-        <input type="radio" name="rating_1" id="rate6" value="6"/><label for="rate6">6</label>
-        <input type="radio" name="rating_1" id="rate5" value="5"/><label for="rate5">5</label>
-        <input type="radio" name="rating_1" id="rate4" value="4"/><label for="rate4">4</label>
-        <input type="radio" name="rating_1" id="rate3" value="3"/><label for="rate3">3</label>
-        <input type="radio" name="rating_1" id="rate2" value="2"/><label for="rate2">2</label>
-        <input type="radio" name="rating_1" id="rate1" value="1"/><label for="rate1">1</label>
+        {
+          choices.map((choice) => (
+            <div key={choice.id} className={choice.classname}>
+              <input type="radio" name={choice.name} id={choice.id} value={choice.value} onClick={onselect}/>
+              <label htmlFor={choice.id}>{choice.value}</label>
+            </div>
+          ))
+        }
       </div>
     </div>
 

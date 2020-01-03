@@ -1,0 +1,319 @@
+{
+  "questions": [
+    {
+      "name" : "Q-1",
+      "id" : "Q-1",
+      "score" : 6,
+      "question_EN" : "I prefer the familiar to the unknown",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adventurousness"
+    },
+    {
+      "name" : "Q-2",
+      "id" : "Q-2",
+      "score" : 6,
+      "question_EN" : "I rarely second-guess myself",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Confidence"
+    },
+    {
+      "name" : "Q-3",
+      "id" : "Q-3",
+      "score" : 6,
+      "question_EN" : "I'm unlikely to change plans once they're set",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adaptability"
+    },
+    {
+      "name" : "Q-4",
+      "id" : "Q-4",
+      "score" : 6,
+      "question_EN" : "I can't wait for the day to get started",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Passion/Drive"
+    },
+    {
+      "name" : "Q-5",
+      "id" : "Q-5",
+      "score" : 6,
+      "question_EN" : "I believe in not getting your hopes too high",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Optimism"
+    },
+    {
+      "name" : "Q-6",
+      "id" : "Q-6",
+      "score" : 6,
+      "question_EN" : "If something's broken, I try to find a way to fix it",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Resourcefulness"
+    },
+    {
+      "name" : "Q-7",
+      "id" : "Q-7",
+      "score" : 6,
+      "question_EN" : "I get impatient when there are no clear answers",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Tolerance for Ambiguity"
+    },
+    {
+      "name" : "Q-8",
+      "id" : "Q-8",
+      "score" : 6,
+      "question_EN" : "I'm inclined to establish routines and stay with them",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adventurousness"
+    },
+    {
+      "name" : "Q-9",
+      "id" : "Q-9",
+      "score" : 6,
+      "question_EN" : "I can make any situation work for me",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Confidence"
+    },
+    {
+      "name" : "Q-10",
+      "id" : "Q-10",
+      "score" : 6,
+      "question_EN" : "When something important doesn't work out, it takes me time to adjust",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adaptability"
+    },
+    {
+      "name" : "Q-11",
+      "id" : "Q-11",
+      "score" : 6,
+      "question_EN" : "I have a hard time relaxing and doing nothing",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Passion/Drive"
+    },
+    {
+      "name" : "Q-12",
+      "id" : "Q-12",
+      "score" : 6,
+      "question_EN" : "If something can go wrong, it usually does",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Optimism"
+    },
+    {
+      "name" : "Q-13",
+      "id" : "Q-13",
+      "score" : 6,
+      "question_EN" : "When I get stuck I'm inclined to improvise solutions",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Resourcefulness"
+    },
+    {
+      "name" : "Q-14",
+      "id" : "Q-14",
+      "score" : 6,
+      "question_EN" : "I get frustrated when I can't get a grip on something...",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Tolerance for Ambiguity"
+    },
+    {
+      "name" : "Q-15",
+      "id" : "Q-15",
+      "score" : 6,
+      "question_EN" : "I prefer work that is similar and in my comfort zone",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adventurousness"
+    },
+    {
+      "name" : "Q-16",
+      "id" : "Q-16",
+      "score" : 6,
+      "question_EN" : "I can handle anything that comes along",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Confidence"
+    },
+    {
+      "name" : "Q-17",
+      "id" : "Q-17",
+      "score" : 6,
+      "question_EN" : "Once I've made up my mind, I don't easily change it",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adaptability"
+    },
+    {
+      "name" : "Q-18",
+      "id" : "Q-18",
+      "score" : 6,
+      "question_EN" : "I push myself to the max",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Passion/Drive"
+    },
+    {
+      "name" : "Q-19",
+      "id" : "Q-19",
+      "score" : 6,
+      "question_EN" : "My tendency is to focus on what can go wrong",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Optimism"
+    },
+    {
+      "name" : "Q-20",
+      "id" : "Q-20",
+      "score" : 6,
+      "question_EN" : "When people need solutions to problems, they call on me",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Resourcefulness"
+    },
+    {
+      "name" : "Q-21",
+      "id" : "Q-21",
+      "score" : 6,
+      "question_EN" : "When an issue is unclear, my impulse is to clarify it right away",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Tolerance for Ambiguity"
+    },
+    {
+      "name" : "Q-22",
+      "id" : "Q-22",
+      "score" : 6,
+      "question_EN" : "It pays to stay with the tried and true",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adventurousness"
+    },
+    {
+      "name" : "Q-23",
+      "id" : "Q-23",
+      "score" : 6,
+      "question_EN" : "I focus on my strengths not my weaknesses",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Confidence"
+    },
+    {
+      "name" : "Q-24",
+      "id" : "Q-24",
+      "score" : 6,
+      "question_EN" : "I find it hard to give on something even if it's not working out",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adaptability"
+    },
+    {
+      "name" : "Q-25",
+      "id" : "Q-25",
+      "score" : 6,
+      "question_EN" : "I'm restless and full of energy",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Passion/Drive"
+    },
+    {
+      "name" : "Q-26",
+      "id" : "Q-26",
+      "score" : 6,
+      "question_EN" : "Things rarely work out the way you want them to",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Optimism"
+    },
+    {
+      "name" : "Q-27",
+      "id" : "Q-27",
+      "score" : 6,
+      "question_EN" : "My strength is to find ways around obstacles ",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Resourcefulness"
+    },
+    {
+      "name" : "Q-28",
+      "id" : "Q-28",
+      "score" : 6,
+      "question_EN" : "I can't stand to leave things unfinished",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Tolerance for Ambiguity"
+    },
+    {
+      "name" : "Q-29",
+      "id" : "Q-29",
+      "score" : 6,
+      "question_EN" : "I prefer the main highway to the backroad",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adventurousness"
+    },
+    {
+      "name" : "Q-30",
+      "id" : "Q-30",
+      "score" : 6,
+      "question_EN" : "My faith in my abilities is unshakable",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Confidence"
+    },
+    {
+      "name" : "Q-31",
+      "id" : "Q-31",
+      "score" : 6,
+      "question_EN" : "When in Rome, do as the Romans do",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Adaptability"
+    },
+    {
+      "name" : "Q-32",
+      "id" : "Q-32",
+      "score" : 6,
+      "question_EN" : "I'm a vigorous and passionate person",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Passion/Drive"
+    },
+    {
+      "name" : "Q-33",
+      "id" : "Q-33",
+      "score" : 6,
+      "question_EN" : "I'm more likely to see problems than opportunities",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Optimism"
+    },
+    {
+      "name" : "Q-34",
+      "id" : "Q-34",
+      "score" : 6,
+      "question_EN" : "I look in unusual places to find solutions",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Resourcefulness"
+    },
+    {
+      "name" : "Q-35",
+      "id" : "Q-35",
+      "score" : 6,
+      "question_EN" : "I don't perform well when there are vague expectations and goals",
+      "question_TH" : "",
+      "status": "true",
+      "Traits" : "Tolerance for Ambiguity"
+    }
+  ]
+}
